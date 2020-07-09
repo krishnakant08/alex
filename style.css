@@ -1,0 +1,184 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.8s;	
+}
+
+b {
+	color: blue;
+}
+
+h1:hover{
+	transform: rotate(-1deg);
+}
+
+.robots {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+}
+
+.head,
+.torso, 
+.right_arm,
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.eyes {
+	display: flex;
+	transition: all 1s;
+	
+}
+
+.eyes:hover{
+	transform: scale(0.8);
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 25px 25px; 
+	margin-bottom: 5px;
+	transition: 1s ease-in-out;
+	border: 3px solid black;
+} 
+
+.head:hover {
+	width: 250px;
+	background-color: white;
+	border: 3px solid black;
+	
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px;
+} 
+
+
+
+.left_arm { 
+	margin-right: 10px;
+	transition: all 2s; 
+	background-color: blue;
+	display: flex;
+	border: 3px solid black;
+} 
+
+.left_arm:hover{
+	
+	transform: rotate(360deg);
+}
+
+.right_arm { 
+	margin-left: 10px;
+	display: flex;
+	border: 3px solid black;
+} 
+
+.torso { 
+	width: 180px; 
+	height: 197px;
+	border-radius: 25px 25px 25px 25px;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+} 
+a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: large;
+}
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 50px auto;
+	display: flex;
+
+
+} 
+.lhand, .rhand {
+	position: relative;
+	width: 37px;
+	height: 30px;
+	border-radius: 0px 0px 20px 20px;
+	border: 2px solid white;
+	margin-top: 0px;
+	background-color: pink;
+	align-self: flex-end;
+}
+
+.lfoot, .rfoot {
+	position: relative;
+	width: 37px;
+	height: 30px;
+	border-radius: 0px 0px 20px 20px;
+	border: 2px solid white;
+	margin-top: 0px;
+	background-color: pink;
+	align-self: flex-end;
+}
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 110px;
+	border-radius: 60px 60px 100px 100px;
+} 
+
+.left_leg { 
+	display: flex;
+	flex-direction: flex-end;
+	margin-left: 45px; 
+	border: 2px solid black;
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(15deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+	display: flex;
+	border: 2px solid black;
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: pink;
+	border: 3px solid black;
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px;
+}
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 110px; 
+}
